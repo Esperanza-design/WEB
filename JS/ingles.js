@@ -2,6 +2,8 @@ console.log("JS Iniciado");
 
 // SELECCIONA TODOS LOS ELEMENTOS HTML CON CLASE .eng
 let ingles = document.querySelectorAll(".eng");
+
+console.log(ingles);
 // LES AÑADE LA CLASE .oculta
 ingles.forEach(elemento => 
     elemento.classList.add("oculta")

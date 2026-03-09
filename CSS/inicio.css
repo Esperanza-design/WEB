@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    margin: 0;
+}
+
+.oculta {
+    display: none;
+}
+
+#logo img {
+    width: 350px;
+}
+
+#btnMenu img {
+    width: 100px;
+}
+
+#idioma img{
+    width: 50px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+
+}
+
+
+#idioma span {
+    transition: all .3s ease-in-out;
+    margin: 2px;
+
+}
+
+#idioma img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* EN DISEÑO MÓVIL NO SE MUESTRA EL MENÚ PARA ESCRITORIO */
+.menuDesktop {
+    margin: 0;
+    display: none;
+
+    font-size: 1.2rem;
+}
+
+.menu li {
+    list-style: none;
+    font-size: 1.4rem;
+    background-color: transparent;
+    border: 2px solid #c86b4a;
+    border-radius: 50px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding: 5%;
+    margin-top: 10px;
+}
+
+.menuDesktop li {
+    border: 1px solid #c86b4a;
+    border-radius: 25px;
+    padding: 10px;
+    min-width: 50%;
+    text-align: center;
+    list-style: none;
+}
+
+.menuDesktop a {
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    font-size: 1.5rem;
+    color: #c86b4a;
+
+}
+
+.menuDesktop a:hover {
+    color: orange;
+}
+
+#btnMenu {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    z-index: 1;
+}
+
+/* CAMBIO EL DISEÑO A TABLET Y ESCRITORIO */
+@media (min-width: 1100px) {
+
+    /* En escritorio se muestra el menú completo */
+    .menuDesktop {
+        display: flex;
+        gap: 15px;
+    }
+
+    /* En escritorio se oculta el botón de hamburguesa */
+    #btnMenu {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+@keyframes abreCaja {
+    from {
+        transform: scaleY(0%);
+    }
+
+    to {
+        transform: scaleY(100%);
+    }
+}
+
+/* AL DESPLEGAR EL MENU EN EL MÓVIL */
+/* Al pulsar el botón de hamburguesa se añade/quita esta clase */
+/* Al tener esta clase, se muestra el menú en una caja desplegada */
+.menuDesplegado {
+    background-color: #f3ece3;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* ESTO NECESITA AJUSTE (top): LA POSICIÓN DE LA VENTANA DESPLEGADA */
+    top: 0;
+
+    padding: 1rem;
+    padding-top: 8rem;
+    font-size: 1.3rem;
+
+    animation-name: abreCaja;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    transform-origin: top;
+}
+
+
+/* ESTILOS PARA EL MAIN */
