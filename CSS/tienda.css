@@ -1,0 +1,113 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* SECCIÓN DE CARDS */
+
+
+#sectcards {
+    /* background-color: #c86b4a; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+#sectcards img {
+    border-radius: 5%;
+    max-width: 100%;
+
+
+}
+
+
+.cards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+
+}
+
+.cards:hover {
+    transform: scale(1);
+
+
+}
+
+
+
+#sectcards h2 {
+    color: #5a3b2e;
+    font-size: 1.5rem;
+}
+
+.cards p {
+
+    font-size: 1.8rem;
+    color: #c86b4a;
+    margin: 0;
+
+}
+
+@media (min-width: 800px) {
+    #sectcards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        padding: 50px;
+    }
+
+
+}
+
+.info {
+    margin: 5%;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: #c86b4a;
+
+
+}
+
+@media (min-width: 800px) {
+    .info p {
+        font-size: 1.5rem;
+
+
+    }
+}
+
+/* HOVER FOTOS */
+
+
+.foto1,
+.foto2 {
+    transition: opacity 0.4s ease-in-out;
+}
+
+.foto2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.cards a:hover .foto1 {
+    opacity: 0;
+}
+
+.cards a:hover .foto2 {
+    opacity: 1;
+}

@@ -1,0 +1,136 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* IMAGEN */
+
+.fototaller {
+    width: 80%;
+    margin: 10% auto;
+
+}
+
+@media (min-width: 800px) {
+   .fototaller{
+    margin-top: 5%;
+   }
+}
+
+
+.fototaller img {
+
+    display: block;
+    max-width: 100%;
+    border-radius: 5%;
+
+}
+
+
+
+/* INFORMACION DEL TALLER */
+.info{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.info h2 {
+    color: #c86b4a;
+    font-size: 2rem;
+    
+}
+
+.info p {
+
+    color: #5a3b2e;
+    font-size: 1rem;
+    
+
+}
+
+.info #precio {
+    color: #c86b4a;
+    font-size: 1.8rem;
+
+
+}
+
+@media (min-width: 800px) {
+   .contenedor {
+        margin-top: 2%;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding: 50px;
+
+    }
+}
+
+
+
+
+
+/* BOTONES */
+
+.btn-reserva {
+    background-color: #e1a218;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin-top: 2%;
+    margin-bottom: 15%;
+    transition: all 0.3s ease;
+    position: relative;
+   
+    
+
+
+}
+
+.btn-reserva:hover {
+    background-color: #e6b957;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn-reserva a:hover {
+    color: white;
+
+}
+
+.btn-reserva a {
+    text-decoration: none;
+    color: white;
+}
+
+.otrostalleres{
+    display: flex;
+    align-content: space-between;
+    gap: 140px;
+    margin-bottom: 50px;
+}
+
+.otrostalleres a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #5a3b2e;
+    border-bottom: 1px solid transparent;
+    transition: all 1s ease;
+    
+}
+
+.otrostalleres a:hover{
+    
+    border-bottom: 1px solid black;
+}

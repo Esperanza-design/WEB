@@ -1,0 +1,196 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@media (min-width: 800px) {
+    main {
+        margin: 5%;
+        margin-top: 0;
+    }
+}
+
+
+
+/* Titular*/
+
+h1 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    color: #c86b4a;
+    text-decoration: solid;
+    font-size: 3rem;
+}
+
+@media (min-width: 800px) {
+    h1 {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+
+
+/* Crear desde 0 */
+
+.talleres {
+    /* background-color: blue; */
+    margin: 5%;
+   
+}
+
+.talleres img {
+
+    border-radius: 5%;
+    max-width: 100%;
+
+}
+
+
+.talleres h2 {
+    margin-top: 5%;
+    color: #c86b4a;
+    font-size: 2rem;
+
+
+}
+
+.talleres p {
+    color: #5a3b2e;
+    font-size: 1rem;
+
+}
+
+@media (min-width: 800px) {
+    .talleres {
+        text-align: center;
+    }
+
+    .talleres img {
+        max-width: 80%;
+
+    }
+
+    .talleres h2 {
+        margin-top: 2%;
+        margin-left: 10%;
+        text-align: start;
+
+
+
+    }
+
+    .talleres p {
+        font-size: 1.2rem;
+        text-align: start;
+        margin-left: 10%;
+        margin-right: 10%;
+
+    }
+}
+
+
+
+
+
+/* SECCIÓN DE CARDS */
+
+
+#sectcards {
+    /* background-color: #c86b4a; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    /* margin-top: 50px; */
+}
+
+#sectcards img {
+    border-radius: 5%;
+    max-width: 100%;
+
+
+}
+
+
+
+
+
+
+.cards {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+
+}
+
+.cards:hover {
+    transform: scale(1);
+}
+
+
+
+#sectcards h2 {
+    color: #5a3b2e;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+@media (min-width: 800px) {
+    #sectcards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        padding: 50px;
+    }
+
+
+}
+
+
+/* BOTONES */
+
+
+button {
+    background-color: #e1a218;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin-top: 2%;
+    margin-bottom: 15%;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: auto;
+
+}
+
+button:hover {
+    background-color: #e6b957;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+button a:hover {
+    color: white;
+
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+

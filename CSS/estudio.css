@@ -1,0 +1,241 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: blue; */
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Principio carrusel */
+
+h1 {
+    margin-top: 10%;
+    text-align: center;
+    color: #c86b4a;
+    text-decoration: solid;
+    font-size: 3rem;
+}
+
+#eslogan {
+    text-align: center;
+}
+
+
+button {
+    background-color: #e1a218;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin-top: 2%;
+    margin-bottom: 15%;
+    transition: all 0.3s ease;
+
+
+}
+
+
+button:hover {
+    background-color: #e6b957;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+@media (min-width: 800px) {
+
+    h1 {
+        margin-top: 5%;
+
+    }
+
+    #eslogan {
+        margin-top: -2%;
+    }
+
+
+}
+
+
+
+
+
+/* Valores y Objetivos */
+
+
+ p {
+    color: #5a3b2e;
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-right: 2%;
+    text-align: start;
+}
+
+
+
+
+#objyval h2 {
+    margin-top: 15%;
+    color: #c86b4a;
+    font-size: 2rem;
+    margin-left: 5%;
+
+}
+
+@media (min-width: 800px) {
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    #objyval h2 {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10%;
+    }
+
+
+
+}
+
+
+/* Horario */
+
+.horario {
+    margin-top: 10%;
+    background-color: #c86b4a;
+    margin-bottom: 5%;
+
+
+}
+
+.horario h2 {
+    margin-top: 15%;
+    color: white;
+    font-size: 2rem;
+    margin-left: 0;
+    text-align: center;
+
+}
+
+.horario ul {
+    list-style-position: inside;
+    margin-bottom: 15%;
+}
+
+.horario li {
+    color: white;
+    font-size: 1rem;
+}
+
+@media (min-width: 800px) {
+
+    .horario {
+        margin-top: 10%;
+        margin-bottom: 0;
+
+    }
+
+    .horario h2 {
+        margin-top: 5%;
+
+    }
+
+
+    .horario ul {
+        margin-bottom: 5%;
+        margin-left: 35%;
+    }
+
+
+    .horario li {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+}
+
+
+/* Donde encontrarnos */
+
+.encontrarnos {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+
+
+.encontrarnos h2 {
+
+    font-size: 2rem;
+    color: #c86b4a;
+    text-align: center;
+
+
+}
+
+.encontrarnos ul {
+    list-style-position: inside;
+    margin-bottom: 15%;
+}
+
+.encontrarnos li {
+    color: #5a3b2e;
+    font-size: 1rem;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    border-radius: 5%;
+    display: block;
+}
+
+
+@media (min-width: 800px) {
+
+    .encontrarnos {
+        margin-top: 10%;
+        margin-bottom: 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding: 50px;
+
+    }
+
+    .encontrarnos h2 {
+        margin-top: 5%;
+        text-align: start;
+        margin-left: 10%;
+
+    }
+
+
+    .encontrarnos ul {
+        margin-bottom: 5%;
+
+    }
+
+
+    .encontrarnos li {
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+}

@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/inicio.css">
-    <script src="JS/ingles.js" defer></script>
     <link rel="stylesheet" href="CSS/carrusel.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+
+    <script src="JS/ingles.js" defer></script>
     <script src="JS/menu.js" defer></script>
     <script src="JS/carrusel.js" defer></script>
-    
+
 </head>
 
 <body>
@@ -26,40 +29,40 @@
 
         <ul class="menuDesktop">
             <li class="cast">
-                <a href="">Inicio</a>
+                <a href="index.html">Inicio</a>
             </li>
             <li class="eng">
-                <a href="">Home</a>
+                <a href="index.html">Home</a>
             </li>
             <li class="cast">
-                <a href="">Estudio</a>
+                <a href="HTML/estudio.html">Estudio</a>
             </li>
             <li class="eng">
-                <a href="">Studio</a>
+                <a href="HTML/estudio.html">Studio</a>
             </li>
             <li class="cast">
-                <a href="">Talleres</a>
+                <a href="HTML/talleres.html">Talleres</a>
             </li>
             <li class="eng">
-                <a href="">Workshops</a>
+                <a href="HTML/talleres.html">Workshops</a>
             </li>
             <li class="cast">
-                <a href="">Tienda</a>
+                <a href="HTML/tienda.html">Tienda</a>
             </li>
             <li class="eng">
-                <a href="">Shop</a>
+                <a href="HTML/tienda.html">Shop</a>
             </li>
             <li class="cast">
-                <a href="">Blog</a>
+                <a href="HTML/blog.html">Blog</a>
             </li>
             <li class="eng">
-                <a href="">Blog</a>
+                <a href="HTML/blog.html">Blog</a>
             </li>
             <li class="cast">
-                <a href="">Contacto</a>
+                <a href="HTML/contacto.html">Contacto</a>
             </li>
             <li class="eng">
-                <a href="">Contact</a>
+                <a href="HTML/contacto.html">Contact</a>
             </li>
         </ul>
 
@@ -76,75 +79,72 @@
 
 
 
-    <!-- <main>
+    <main>
+
+        <picture id="fotointro">
+            <source media="(min-width: 800px)" srcset="IMG/inicioPC.jpg">
+            <img src="IMG/inicioMovil.jpg">
+        </picture>
 
 
-        <section>
-            <img src="IMG/inicio1.jpg">
+        <section id="intro">
+
+            <div class="Bienv">
+                <h1 class="cast">¡Bienvenidos!</h1>
+                <h1 class="eng">Welcome!</h1>
+
+                <p class="cast">Bienvenid@ a Claycrew estudio:
+                    un espacio para crear con calma, ensuciarse
+                    las manos y transformar ideas en piezas únicas. Aquí cada
+                    detalle cuenta… y tu creatividad manda.
+                    ¡Ven a pasar un buen rato en compañia! </p>
+                <p class="eng">Welcome to Claycrew Studio:
+                    A space to create calmly, get your hands dirty,
+                    and transform ideas into unique pieces. Here, every
+                    detail counts… and your creativity reigns supreme.
+                    Come and have a great time with friends! </p>
+                <button class="cast"><a href="HTML/estudio.html">Más info</a></button>
+                <button class="eng"><a href="HTML/estudio.html">More info</a></button>
+            </div>
+
+            <video src="IMG/NavarroMilan_Esperanza_Animática.mp4" controls autoplay muted></video>
+
         </section>
 
-        <section class="margin">
-            <section id="intro">
-
-                <div class="Bienv">
-            <h1 class="cast">¡Bienvenidos!</h1>
-            <h1 class="eng">Welcome!</h1>
-        
-            <p class="cast">Bienvenid@ a Claycrew estudio:
-                un espacio para crear con calma, ensuciarse
-                las manos y transformar ideas en piezas únicas. Aquí cada
-                detalle cuenta… y tu creatividad manda.
-                ¡Ven a pasar un buen rato en compañia! </p>
-            <p class="eng">Welcome to Claycrew Studio:
-                A space to create calmly, get your hands dirty,
-                and transform ideas into unique pieces. Here, every
-                detail counts… and your creativity reigns supreme.
-                Come and have a great time with friends! </p>
-            <button class="cast"><a href="">Más info</a></button>
-             <button class="eng"><a href="">More info</a></button>
-             </div>
-             
-            <video src="IMG/Montaje_invisible_Esperanza.mp4" controls autoplay muted></video>
-
-            </section>
-        </section>
 
         <section class="ofrecemos">
             <h1 class="cast">¿Qué te ofrecemos?</h1>
             <h1 class="eng">What do we offer you?</h1>
             <section id="sectcards">
-            <div class="cards">
-                <img src="IMG/inicio_experiencias.jpg">
-                <h2 class="cast">Experiencias</h2>
-                <h2 class="eng">Experiences</h2>
-                <button class="cast"><a href="">Ver talleres</a></button>
-                <button class="eng"><a href="">View Workshops</a></button>
+                <div class="cards">
+                    <img src="IMG/inicio_experiencias.jpg">
+                    <h2 class="cast">Experiencias</h2>
+                    <h2 class="eng">Experiences</h2>
+                    <button class="cast"><a href="HTML/talleres.html">Ver talleres</a></button>
+                    <button class="eng"><a href="HTML/talleres.html">View Workshops</a></button>
 
-            </div>
+                </div>
 
-            <div class="cards">
-                <img src="IMG/inicio_tienda.jpg">
-                <h2 class="cast">Piezas únicas</h2>
-                <h2 class="eng">Unique pieces</h2>
-                <button class="cast"><a href="">Ver tienda</a></button>
-                <button class="eng"><a href="">View shop</a></button>
-            </div>
+                <div class="cards">
+                    <img src="IMG/inicio_tienda.jpg">
+                    <h2 class="cast">Piezas únicas</h2>
+                    <h2 class="eng">Unique pieces</h2>
+                    <button class="cast"><a href="HTML/tienda.html">Ver tienda</a></button>
+                    <button class="eng"><a href="HTML/tienda.html">View shop</a></button>
+                </div>
 
-            <div class="cards">
-                <img src="IMG/inico_comunidad.jpg">
-                <h2 class="cast">Comunidad</h2>
-                <h2 class="eng">Community</h2>
-                <button class="cast"><a href="">Ver blog</a></button>
-                <button class="eng"><a href="">View blog</a></button>
+                <div class="cards">
+                    <img src="IMG/inico_comunidad.jpg">
+                    <h2 class="cast">Comunidad</h2>
+                    <h2 class="eng">Community</h2>
+                    <button class="cast"><a href="HTML/blog.html">Ver blog</a></button>
+                    <button class="eng"><a href="HTML/blog.html">View blog</a></button>
 
-            </div>
-        </section>
+                </div>
+            </section>
         </section>
 
         <section class="carrusel">
-
-
-
             <div class="carrusel-contenedor">
 
                 <div class="carrusel_item">
@@ -182,29 +182,23 @@
 
         </section>
 
+    </main>
 
-
-        <section id="controles">
-
-            <button id="playPause">⏸ Pausa</button>
-
-        </section>
-
-
-    </main> -->
-
-    <!-- <footer>
+    <footer>
         <section id="sectfooter">
-        <img src="IMG/logo_claycrew.png" alt="">
+            <img src="IMG/logo_claycrew.png" alt="">
 
-        <img src="IMG/iconos_redessociales.png" alt="">
-
-        <p>@Claycrew.estudio en todas las redes</p>
-        <p>Política privacidad</p>
+            <div id="redes">
+                <img src="IMG/iconos_redessociales.png" alt="">
+                <p class="cast">@Claycrew.estudio en todas las redes</p>
+                <p class="eng">@Claycrew.estudio on all social media</p>
+            </div>
         </section>
 
+        <a class="cast" href="#">Política privacidad</a>
+        <a class="eng" href="#">Privacy policy</a>
 
-    </footer> -->
+    </footer>
 
 </body>
 

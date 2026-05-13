@@ -1,0 +1,53 @@
+/* ANIMACIÓN PARA MOVER EL CONTENIDO EN EL EJE X (HORIZONTAL) */
+@keyframes carr_scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#carrusel {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+
+#carrusel:hover {
+    .carr_grupo {
+        animation-play-state: paused;
+    }
+}
+
+.carr_grupo {
+    /* CONFIGURAMOS EL ITEM DEL CONTENEDOR FLEX PARA QUE NO LOS REDIMENSIONE */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
+    /* CADA GRUPO FORMA UNA REJILLA DE 4 COLUMNAS  */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-right: 10px;
+
+    /* ACTIVAMOS LA ANIMACIÓN DE LOS 2 GRUPOS */
+    animation-name: carr_scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation: carr_scroll 10s linear infinite; */
+}
+
+.carrusel_item {
+    /* posicionamos relativo para que su texto se pueda poner en absoluto sobre este contenedor */
+    position: relative;
+
+}
+
+
+.carr_img {
+    width: 100%;
+    border-radius: 10px;
+}

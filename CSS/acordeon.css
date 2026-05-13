@@ -1,0 +1,72 @@
+/* body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background: #f8f9fa;
+  overflow-y: scroll;
+} */
+
+.acordeon {
+  margin-bottom: 5%;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+  overflow: hidden;
+
+}
+
+/* .acordeon-item {
+  border-bottom: 1px solid #dee2e6;
+} */
+
+/* Selecciona los <p> que tienen arriba otro <p> */
+.acordeon-body p + p {
+  border-top: 2px solid black;
+  padding-top: 10px;
+}
+
+.acordeon-header {
+  width: 100%;
+  padding: 15px;
+  background:#dee2e6;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+/* dibujamos la flecha en las cabeceras */
+.acordeon-header::after {
+  content: "";
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url("../IMG/circulo-de-flecha.png");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transition: transform 0.2s ease;
+}
+
+.acordeon-header.active::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.acordeon-body {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  transition: max-height 0.3s ease;
+  padding: 0 15px;
+}
+
+.acordeon-body p {
+  margin: 15px 0;
+}
+
+.opcion-hora {
+  display: block;
+  margin: 8px 0;
+}

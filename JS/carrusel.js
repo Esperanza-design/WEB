@@ -23,13 +23,11 @@ function startAutoplay() {
         showSlide(index + 1);
     }, segundos * 1000);
     isPlaying = true;
-    playPauseBtn.textContent = "⏸ Pausa";
 }
 
 function stopAutoplay() {
     clearInterval(autoplay);
     isPlaying = false;
-    playPauseBtn.textContent = "▶ Play";
 }
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -44,15 +42,6 @@ document.querySelector('.prev').addEventListener('click', () => {
     startAutoplay();
 });
 
-// Botón Play / Pause
-const playPauseBtn = document.getElementById('playPause');
-playPauseBtn.addEventListener('click', () => {
-    if (isPlaying) {
-        stopAutoplay();
-    } else {
-        startAutoplay();
-    }
-});
 
 // Recalcular al cambiar tamaño
 window.addEventListener('resize', updateWidth);
